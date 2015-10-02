@@ -6,3 +6,4 @@ Homestead.json
 
 .idea
 .DS_Store
+storage/database.sqlite
