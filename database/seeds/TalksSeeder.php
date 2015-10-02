@@ -74,7 +74,7 @@ class TalksSeeder extends Seeder
             ['author' => 'Michelangelo van Dam', 'is_talk' => 1, 'track' => 2, 'title' => 'PHPUnit IV.III - Return of the tests', 'starts_at' => '2015-10-03 16:20:00', 'ends_at' => '2015-10-03 17:10:00'],
             ['author' => 'Chris Riley', 'is_talk' => 1, 'track' => 3, 'title' => 'You Attended Talk: an introduction to event sourcing', 'starts_at' => '2015-10-03 16:20:00', 'ends_at' => '2015-10-03 17:10:00'],
             ['author' => '', 'is_talk' => 0, 'track' => 1, 'title' => 'Platinum Sponsor & Prizes', 'starts_at' => '2015-10-03 17:20:00', 'ends_at' => '2015-10-03 18:15:00'],
-            ['author' => '', 'is_talk' => 0, 'track' => null, 'title' => 'Evening Meal & Social', 'starts_at' => '2015-10-03 19:00:00', 'ends_at' => '2015-10-03 wards:00'],
+            ['author' => '', 'is_talk' => 0, 'track' => null, 'title' => 'Evening Meal & Social', 'starts_at' => '2015-10-03 19:00:00', 'ends_at' => null],
 
             // second day
             ['author' => '', 'is_talk' => 0, 'track' => 1, 'title' => 'Opening Address', 'starts_at' => '2015-10-04 08:45:00', 'ends_at' => '2015-10-04 08:55:00'],

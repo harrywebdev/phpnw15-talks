@@ -10,6 +10,11 @@ class Talk extends Model
     /**
      * {@inheritdoc}
      */
+    protected $dates = ['starts_at', 'ends_at'];
+
+    /**
+     * {@inheritdoc}
+     */
     protected $guarded = ['id'];
 
     /**
