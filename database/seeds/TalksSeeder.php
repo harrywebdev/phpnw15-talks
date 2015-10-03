@@ -35,9 +35,7 @@ class TalksSeeder extends Seeder
             'ends_at'   => $talk['ends_at'],
         ];
 
-        if (isset($talk['author']) && $talk['author']) {
-            $speaker = Speaker::whereName($talk['author'])->first();
-
+        if (isset($talk['author']) && $speaker = Speaker::whereName($talk['author'])->first()) {
             return $speaker->talks()->create($data);
         }
 
@@ -90,6 +88,19 @@ class TalksSeeder extends Seeder
             ['author' => 'Mike Bell', 'is_talk' => 1, 'track' => 3, 'title' => 'Mental Health, Open Source and You', 'starts_at' => '2015-10-04 11:10:00', 'ends_at' => '2015-10-04 11:55:00'],
             ['author' => 'Stefan Koopmanschap', 'is_talk' => 1, 'track' => 1, 'title' => 'Keynote:', 'starts_at' => '2015-10-04 12:05:00', 'ends_at' => '2015-10-04 12:50:00'],
             ['author' => '', 'is_talk' => 0, 'track' => 1, 'title' => 'Closing Remarks', 'starts_at' => '2015-10-04 12:05:00', 'ends_at' => '2015-10-04 13:00:00'],
+
+            // unconf
+            ['author' => 'Billie Thompson', 'is_talk' => 1, 'track' => 9, 'title' => 'Docker', 'starts_at' => '2015-10-03 10:45:00', 'ends_at' => '2015-10-03 11:10:00'],
+            ['author' => 'Matt Cockayne', 'is_talk' => 1, 'track' => 9, 'title' => 'Are you a good Code Scout', 'starts_at' => '2015-10-03 11:10:00', 'ends_at' => '2015-10-03 11:35:00'],
+            ['author' => 'Andy Burgin', 'is_talk' => 1, 'track' => 9, 'title' => 'How to make a kickass meetup group for £20', 'starts_at' => '2015-10-03 11:35:00', 'ends_at' => '2015-10-03 12:00:00'],
+            ['author' => 'Dennis de Greef', 'is_talk' => 1, 'track' => 9, 'title' => 'Software metrics', 'starts_at' => '2015-10-03 12:00:00', 'ends_at' => '2015-10-03 12:25:00'],
+            ['author' => 'Gabriela D\'Ávila', 'is_talk' => 1, 'track' => 9, 'title' => 'Strip your TEXT field', 'starts_at' => '2015-10-03 12:25:00', 'ends_at' => '2015-10-03 12:50:00'],
+            ['author' => 'Mark Bradley', 'is_talk' => 1, 'track' => 9, 'title' => 'Imposter Syndrome: have I been faking it for this time?', 'starts_at' => '2015-10-03 12:50:00', 'ends_at' => '2015-10-03 13:15:00'],
+            ['author' => 'tbc', 'is_talk' => 1, 'track' => 9, 'title' => 'tbc', 'starts_at' => '2015-10-03 14:00:00', 'ends_at' => '2015-10-03 14:25:00'],
+            ['author' => 'Gabriel Somoza', 'is_talk' => 1, 'track' => 9, 'title' => 'How to Migrate Anything with DDD', 'starts_at' => '2015-10-03 14:25:00', 'ends_at' => '2015-10-03 14:50:00'],
+            ['author' => 'MIchael Cullum', 'is_talk' => 1, 'track' => 9, 'title' => 'PHP FIG: The PSRs you don\'t know about', 'starts_at' => '2015-10-03 14:50:00', 'ends_at' => '2015-10-03 15:15:00'],
+            ['author' => 'Endijs Lisovskis', 'is_talk' => 1, 'track' => 9, 'title' => 'Easy OpenStreetMap POI maps with Clusterpoint', 'starts_at' => '2015-10-03 15:15:00', 'ends_at' => '2015-10-03 15:40:00'],
+            ['author' => 'tbc', 'is_talk' => 1, 'track' => 9, 'title' => 'tbc', 'starts_at' => '2015-10-03 15:40:00', 'ends_at' => '2015-10-03 16:05:00'],
         ];
     }
 

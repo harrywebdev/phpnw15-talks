@@ -53,6 +53,15 @@ class SpeakersSeeder extends Seeder
             "Michael Cullum",
             "Stuart Herbert",
             "Mike Bell",
+            "Billie Thompson",
+            "Matt Cockayne",
+            "Andy Burgin",
+            "Dennis de Greef",
+            "Gabriela D'Ávila",
+            "Mark Bradley",
+            "Gabriel Somoza",
+            "MIchael Cullum",
+            "Endijs Lisovskis",
         ];
     }
 }

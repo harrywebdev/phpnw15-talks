@@ -74,7 +74,8 @@ class PushPinsToPebble extends Command
         $layout->setBody($talk->speaker ? $talk->speaker->name : 'n/a');
 
         if ($talk->track) {
-            $layout->setLocationName('Track ' . $talk->track);
+            $location = $talk->track == 9 ? 'Unconf' : 'Track ' . $talk->track;
+            $layout->setLocationName($location);
         }
 
         // Put it all together
